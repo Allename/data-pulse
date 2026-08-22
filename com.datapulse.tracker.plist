@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.datapulse.tracker</string>
+
+    <!-- Run: node serve.mjs, from the project directory -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/allename/.nvm/versions/node/v20.19.4/bin/node</string>
+        <string>/Users/allename/Desktop/datapulse/serve.mjs</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/allename/Desktop/datapulse</string>
+
+    <!-- Start at login, and restart automatically if it ever exits/crashes -->
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+
+    <!-- Logs (handy for troubleshooting) -->
+    <key>StandardOutPath</key>
+    <string>/Users/allename/Desktop/datapulse/debug/launchd.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/allename/Desktop/datapulse/debug/launchd.err.log</string>
+</dict>
+</plist>

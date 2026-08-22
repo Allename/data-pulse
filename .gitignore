@@ -1,0 +1,16 @@
+# Secrets & machine-specific state — never distribute these
+
+# contains YOUR router admin password
+config.json
+# your personal usage history
+store.json
+# login dumps: session cookies + raw router HTML
+debug/
+
+# Build output & deps
+node_modules/
+dist/
+
+# Misc
+*.bak
+.DS_Store
